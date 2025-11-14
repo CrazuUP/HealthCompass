@@ -18,7 +18,7 @@ except Exception as e:
 if __name__ == "__main__":
     import uvicorn
 
-    print("🚀 Starting Health Compass Bot...")
+    print("🚀 Starting Health Compass MAX Mini-App...")
     try:
         uvicorn.run(
             "main:app",

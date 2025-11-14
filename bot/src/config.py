@@ -7,10 +7,13 @@ logger = logging.getLogger(__name__)
 
 
 class Settings(BaseSettings):
-    # MAX Bot Configuration
-    max_bot_token: str = "test_bot_token_123"
+    # MAX Mini-App Configuration
     max_api_url: str = "https://api.max.ru/v1"
-    webhook_url: str = "https://localhost:8000/webhook"
+    max_app_url: str = "https://localhost:8000"
+    
+    # Опционально: настройки для бот-компонента
+    max_bot_token: Optional[str] = None
+    webhook_url: Optional[str] = None
     webhook_secret: Optional[str] = None
 
     # Server Configuration
